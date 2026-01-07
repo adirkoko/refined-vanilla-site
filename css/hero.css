@@ -69,9 +69,12 @@
 
 /* Masked title */
 .video-title-container {
-    width: 100%;
-    max-width: 900px;
-    margin-bottom: 1.5rem;
+  width: min(1000px, calc(100vw - 3rem));
+  max-width: none;
+  margin-bottom: 1.5rem;
+
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
 .video-title-svg {
@@ -80,12 +83,18 @@
 }
 
 .mask-text {
-    font-size: clamp(3rem, 10vw, 6rem);
+    font-size: clamp(4rem, 12vw, 9rem);
+
+
     font-weight: 800;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
 
     fill: white;
+
+    stroke: rgba(0, 0, 0, 0.75);
+    stroke-width: 6px;
+    paint-order: stroke fill;
 }
 
 .video-wrapper,
@@ -97,14 +106,18 @@
 
 /* Subtitle */
 .hero-subtitle {
-    margin-bottom: 2rem;
+    margin-top: -2.5rem;
+    margin-bottom: 2.5rem;
 
-    font-size: var(--text-lg);
-    font-weight: 500;
-    color: var(--text-main);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 
-    opacity: 0.9;
+    color: var(--text-bright);
+    opacity: 0.95;
 }
+
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -115,4 +128,15 @@
     .hero-subtitle {
         font-size: var(--text-md);
     }
+}
+
+.hero-content .btn {
+    margin-top: 12rem;
+}
+
+/* Highlighted */
+.credit nm {
+  color: var(--accent-primary);
+  font-style: normal;
+  font-weight: 600;
 }

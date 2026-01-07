@@ -19,18 +19,18 @@
     background: rgba(185, 208, 220, 0.02);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    
+
     border: 1px solid var(--border-color);
     border-radius: var(--radius-xl);
     overflow: hidden;
-    
+
     /* Animation: Cinematic entry */
     opacity: 0;
     transform: translateY(40px) scale(0.95);
     filter: blur(15px);
     animation: blogEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    
-    transition: 
+
+    transition:
         transform 0.6s cubic-bezier(0.2, 0, 0.2, 1),
         border-color 0.4s ease,
         box-shadow 0.6s ease;
@@ -46,7 +46,7 @@
 .blog-card:hover {
     transform: translateY(-8px) scale(1.01);
     border-color: rgba(21, 122, 110, 0.4);
-    box-shadow: 
+    box-shadow:
         0 30px 60px -15px rgba(0, 0, 0, 0.7),
         0 0 20px -5px var(--accent-glow);
 }
@@ -149,11 +149,24 @@
     }
 }
 
-.blog-card:nth-child(1) { animation-delay: 0.1s; }
-.blog-card:nth-child(2) { animation-delay: 0.25s; }
-.blog-card:nth-child(3) { animation-delay: 0.4s; }
+.blog-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.blog-card:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.blog-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
 
 /* --- 7. Single Post Page Style --- */
+
+.post-body p {
+    margin-bottom: 1.5rem;
+}
+
 .post-wrapper {
     max-width: 850px;
     margin-inline: auto;
@@ -171,6 +184,13 @@
     letter-spacing: -0.02em;
 }
 
+.post-body h2, 
+.post-body h3 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-bright);
+}
+
 .post-body {
     font-size: 1.15rem;
     line-height: 1.9;
@@ -178,11 +198,17 @@
 }
 
 .post-body img {
-    margin-block: 3rem;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 3rem auto;
     border-radius: var(--radius-xl);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--border-color);
 }
+
+
 
 .post-body blockquote {
     position: relative;

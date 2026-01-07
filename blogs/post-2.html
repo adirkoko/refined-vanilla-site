@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>New Versioning System | Refined Vanilla</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/main/logo.png">
+
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/layout.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/blogs.css" />
+</head>
+
+<body>
+    <header role="banner">
+        <div class="container nav-container">
+            <a href="./index.html" class="brand" aria-label="Refined Vanilla Home">
+                <img src="../assets/img/main/logo.png" alt="Refined Vanilla logo" class="brand-logo"/>
+
+                <span>Refined Vanilla</span>
+            </a>
+
+            <div class="nav-actions">
+                <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                    aria-label="Open navigation menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                        aria-hidden="true" focusable="false">
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+                </button>
+
+                <nav aria-label="Primary">
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./index.html">Blogs</a></li>
+                        <li><a href="../rules/index.html">Rules</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main" class="container">
+        <article class="post-wrapper">
+            <div class="post-header">
+                <h1>Minecraft Versioning Is Officially Dead</h1>
+                <div class="blog-meta">News • January 6, 2026</div>
+            </div>
+
+            <div class="post-body">
+                <p>
+                    For over a decade, Minecraft players have awaited the next "big number" - from 1.8 to 1.21. However,
+                    Mojang has officially announced a massive shift in how the game will be developed and numbered
+                    moving forward. The era of 1.22 is gone; the era of yearly versioning has begun.
+                </p>
+
+                <img src="../assets/img/post-2/versioning-hero.jpg" alt="Minecraft Versioning Diagram" loading="lazy" />
+
+                <h2>Why the change?</h2>
+                <p>
+                    The old "one big update per year" model is being retired. Instead, Mojang is moving to <strong>"Game
+                        Drops"</strong> - smaller, more frequent content updates that happen throughout the year.
+                    Because
+                    updates are coming faster, the old 1.x.x numbering system became confusing.
+                </p>
+
+                <blockquote>
+                    "By moving to a calendar-based system, it becomes immediately clear when a feature was added and
+                    which version of the game is the most current."
+                </blockquote>
+
+                <h2>How the new numbers work</h2>
+                <p>
+                    Starting in 2026, versions will follow a simple <code>Year.Update.Patch</code> format.
+                </p>
+                <ul>
+                    <li><strong>Year:</strong> The first two digits represent the year (e.g., 26 for 2026).</li>
+                    <li><strong>Update:</strong> The sequence of the "Game Drop" in that year (.1, .2, .3).</li>
+                    <li><strong>Patch:</strong> Minor bug fixes (e.g., 26.1.1).</li>
+                </ul>
+
+                <img src="../assets/img/post-2/game-drops.jpg" alt="Recent Minecraft Game Drops" loading="lazy" />
+
+                <h3>What this means for Refined Vanilla</h3>
+                <p>
+                    For us, nothing changes in terms of commitment. We will continue to keep the server fully up to date
+                    with every new Minecraft release, making sure players always have access to the latest features,
+                    fixes, and improvements as they become available.
+                </p>
+
+
+                <div style="margin-top: 5rem; text-align: center;">
+                    <a href="index.html" class="btn btn-outline">← Back to All Posts</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Refined Vanilla. 1.x is history.</p>
+            <p class="blog-author">Written by AdirKoko</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
